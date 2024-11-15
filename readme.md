@@ -2,7 +2,7 @@
 
 ## Overview
 
-This project demonstrates a loopback example using an STM32 microcontroller (MCU) with two WIZnet W5100S-EVB Ethernet controller modules. It allows a single STM32 MCU to interface with two W5100S chips via SPI1 and SPI2, enabling robust networking capabilities.
+This project demonstrates a loopback example using an W5100S-EVB board with extra WIZnet W5100S chip. It allows a single STM32 MCU to interface with two W5100S chips via SPI1 and SPI2, enabling robust networking capabilities.
 
 ## Hardware Components
 
