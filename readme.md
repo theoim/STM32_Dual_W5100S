@@ -6,17 +6,17 @@ This project demonstrates a loopback example using an STM32 microcontroller (MCU
 
 ## Hardware Components
 
-- **STM32 Development Board**
-- **WIZnet W5100S-EVB Ethernet Controllers** (2 units)
+- **['W5100S-EVB'](https://docs.wiznet.io/Product/iEthernet/W5100S/w5100s-evb)** (1 units)
+- **[Extra W5100S Chip](https://docs.wiznet.io/Product/iEthernet/W5100S/overview)** (1 units)
 - **Connecting Wires**
 
 ## Hardware Setup
 
-### 1. Built-in W5100S (SPI2)
+### 1. Built-in W5100S (SPI Channel 2)
 
-The STM32 board comes with a pre-installed WIZnet W5100S connected through SPI2.
+'W5100S-EVB' board comes with W5100S connected through SPI2.
 
-### 2. Additional W5100S (SPI1)
+### 2. Additional W5100S (SPI Channel 1)
 
 To add a second W5100S, connect it using SPI1 with the following pin configuration:
 
@@ -75,6 +75,7 @@ Once flashed, the STM32 MCU initializes both W5100S modules, enabling network co
   - Verify all SPI1 connections (PA5, PA6, PA7, PD2, PD7) are secure and correctly mapped.
 
 - **Firmware Flashing Errors:**
+  - Make sure that the board has entered boot mode. Boot mode can enter boot mode by clicking Boot 0 switch on the 'W5100S-EVB' board and applying power.
   - Ensure the STM32 Flash Loader Demonstrator is properly installed.
   - Check that the correct `.hex` file is selected.
   - Confirm that the STM32 board is in the correct mode for flashing.
